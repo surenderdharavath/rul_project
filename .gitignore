@@ -1,0 +1,36 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual Environment
+.venv/
+env/
+venv/
+ENV/
+
+# PyTorch model weights
+*.pt
+*.pth
+
+# Scikit-learn scaler
+*.pkl
+
+# IDE & OS files
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
