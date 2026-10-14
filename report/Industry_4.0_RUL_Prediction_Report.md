@@ -1,19 +1,5 @@
 # Predicting Remaining Useful Life of Industrial Equipment using LSTM-based Deep Learning: An Industry 4.0 Cyber-Physical Prognostics Framework
 
-**A Project Report Submitted in Partial Fulfillment of the Requirements for the Degree of**  
-**Bachelor of Technology / Master of Technology in Computer Science & Engineering / Data Science**
-
-**Submitted by:**  
-`[ YOUR NAME ]` | Roll No: `[ YOUR ROLL NUMBER ]` | Department of `[ YOUR DEPARTMENT ]`  
-
-**Under the Guidance of:**  
-`[ PROFESSOR / GUIDE NAME ]`, Designation: `[ DESIGNATION ]`  
-
-**Institution:**  
-`[ COLLEGE / UNIVERSITY NAME ]`  
-Academic Year: `2025 – 2026`
-
----
 
 ## Abstract
 
