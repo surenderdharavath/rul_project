@@ -1,11 +1,11 @@
-# Industry 4.0: Predictive Maintenance & Remaining Useful Life (RUL) Estimation
+Predictive Maintenance & Remaining Useful Life (RUL) Estimation
 
 [![Python 3.10](https://img.shields.io/badge/Python-3.10-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-ee4c2c.svg)](https://pytorch.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-Interactive%20UI-ff4b4b.svg)](https://streamlit.io/)
 [![Dataset](https://img.shields.io/badge/NASA-C--MAPSS%20FD001-blue.svg)](https://ti.arc.nasa.gov/)
 
-> **Academic Abstract Implementation**  
+ 
 > Predicting Remaining Useful Life of Industrial Equipment using LSTM-based Deep Learning on the NASA C-MAPSS Turbofan Degradation Dataset.
 
 ---
@@ -17,7 +17,7 @@ This project implements a **Cyber-Physical Prognostic System** that learns degra
 
 ### Key Highlights
 - **NASA C-MAPSS FD001 Benchmark:** 100 run-to-failure engines in training, 100 test engines with unknown cutoff cycles.
-- **Sensor Pruning:** Variance-based removal of 7 uninformative/flat sensors (`s_1, s_5, s_6, s_10, s_16, s_18, s_19`).
+- **Sensor Pruning:** Variance-based removal of 7 uninformative/flat sensors.
 - **Piecewise Linear RUL Target Function:** Upper bound clipping at $RUL_{max} = 125$ to prevent learning false degradation during healthy cycles.
 - **Overfitting Resolution:** Demonstrates before-and-after results comparing an overparameterized 3-layer LSTM vs. a regularized 2-layer LSTM with dropout and early stopping.
 - **Benchmark Performance:** Achieves **MAE ~10.6 cycles** and **RMSE ~14.05 cycles** across 100 test engines.
@@ -93,8 +93,7 @@ streamlit run app.py
 ---
 
 ## 📊 Evaluation Metrics
-- **Mean Absolute Error (MAE):** $\approx 10.6 \text{ cycles}$
-- **Root Mean Squared Error (RMSE):** $\approx 14.05 \text{ cycles}$
-- **NASA Asymmetric Scoring Function:**
-  $$S = \sum_{i=1}^{N} \begin{cases} e^{-d_i / 13} - 1 & \text{for } d_i < 0 \text{ (early prediction)} \\ e^{d_i / 10} - 1 & \text{for } d_i \ge 0 \text{ (late prediction)} \end{cases}$$
-  *(Late predictions are exponentially penalized to reflect real-world flight safety constraints).*
+- **Mean Absolute Error (MAE)** 
+- **Root Mean Squared Error (RMSE)** 
+- **NASA Asymmetric Scoring Function**
+
